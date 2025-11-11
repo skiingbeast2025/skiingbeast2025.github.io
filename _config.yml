@@ -1,32 +1,38 @@
-# ... (Comments remain the same until Site settings)
+# Welcome to Jekyll!
 
 # Site settings
-# These are used to personalize your new site...
+# These are used to personalize your new site.
+title: Arctic Llamas Announcements
+email: aidric.tolsdorf@outlook.com
+description: >-
+  The official announcement and communication feed for the Arctic Llamas Troop.
+  Subscribe for real-time updates and RSVP links.
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-
-# --- CRITICAL LINES START HERE (Lines 31-32 in a new Jekyll file) ---
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://skiingbeast2025.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-# --- CRITICAL LINES END HERE ---
+# Your CRITICAL settings for deployment and URL
+baseurl: "" 
+url: "https://arcticllamasannouncements.github.io" 
 
 twitter_username: jekyllrb
-github_username: jekyll
+github_username: ArcticLlamasAnnouncements
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
 
-# --- FEED CONFIGURATION BLOCK ---
+# Feed settings to ensure the RSS file is generated
 feed:
   path: feed.xml
-# --- FEED CONFIGURATION BLOCK END ---
 
 # Exclude from processing.
-# ... (rest of the file remains the same)
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
